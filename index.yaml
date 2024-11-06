@@ -3,6 +3,35 @@ entries:
   ingress-nginx:
   - annotations:
       artifacthub.io/changes: |
+        - Update Ingress-Nginx version controller-v1.12.0-beta.0
+      artifacthub.io/prerelease: "true"
+    apiVersion: v2
+    appVersion: 1.12.0-beta.0
+    created: "2024-11-06T16:14:14.159335314Z"
+    description: Ingress controller for Kubernetes using NGINX as a reverse proxy
+      and load balancer
+    digest: d0b7cd8af528a15c5f6b7e72ee55c8f5fc018da765ad69ffc0cd16337a0730b5
+    home: https://github.com/kubernetes/ingress-nginx
+    icon: https://upload.wikimedia.org/wikipedia/commons/thumb/c/c5/Nginx_logo.svg/500px-Nginx_logo.svg.png
+    keywords:
+    - ingress
+    - nginx
+    kubeVersion: '>=1.21.0-0'
+    maintainers:
+    - name: cpanato
+    - name: Gacko
+    - name: puerco
+    - name: rikatz
+    - name: strongjz
+    - name: tao12345666333
+    name: ingress-nginx
+    sources:
+    - https://github.com/kubernetes/ingress-nginx
+    urls:
+    - https://github.com/satyamz/ingress-nginx/releases/download/helm-chart-4.12.0-beta.0/ingress-nginx-4.12.0-beta.0.tgz
+    version: 4.12.0-beta.0
+  - annotations:
+      artifacthub.io/changes: |
         - "[8810](https://github.com/kubernetes/ingress-nginx/pull/8810) Prepare for v1.3.0"
         - "[8808](https://github.com/kubernetes/ingress-nginx/pull/8808) revert arch var name"
         - "[8805](https://github.com/kubernetes/ingress-nginx/pull/8805) Bump k8s.io/klog/v2 from 2.60.1 to 2.70.1"
@@ -2523,4 +2552,4 @@ entries:
     urls:
     - https://github.com/kubernetes/ingress-nginx/releases/download/ingress-nginx-2.0.0/ingress-nginx-2.0.0.tgz
     version: 2.0.0
-generated: "2022-07-12T13:31:42.746827173Z"
+generated: "2024-11-06T16:14:14.159667164Z"
